@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+
+  drawdb:
+    build:
+      context: .
+      dockerfile: ./drawdb/Dockerfile
+    container_name: drawdb
+    restart: unless-stopped
